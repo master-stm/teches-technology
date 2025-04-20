@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops & Training - TechES</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .activity-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .activity-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .activity-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .activity-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .activity-content {
+            margin-bottom: 3rem;
+        }
+        
+        .activity-content h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--light-background);
+            padding-bottom: 0.5rem;
+        }
+        
+        .workshop-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .workshop-item {
+            background-color: var(--light-background);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .workshop-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .workshop-date {
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+            margin-bottom: 1rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .back-button svg {
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="120">
+            </a>
+        </div>
+        <h1>TechES</h1>
+        <nav>
+            <ul id="header-links">
+                <!-- Header links will be loaded from header-links.js -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="activity-page">
+        <a href="../index.html#activities" class="back-button">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+            Back to Activities
+        </a>
+        
+        <div class="activity-header">
+            <h1 class="activity-title">Workshops & Training</h1>
+            <p class="activity-description">
+                Our workshops and training sessions are designed to provide hands-on experience with cutting-edge technologies, programming languages, and engineering tools. Led by industry experts and experienced members, these sessions help bridge the gap between academic knowledge and practical skills needed in the tech industry.
+            </p>
+        </div>
+        
+        <div class="activity-content">
+            <h2>Upcoming Workshops</h2>
+            <div class="workshop-list">
+                <div class="workshop-item">
+                    <h3 class="workshop-title">Introduction to Machine Learning with Python</h3>
+                    <p class="workshop-date">October 15, 2023 | 2:00 PM - 5:00 PM</p>
+                    <p>Learn the fundamentals of machine learning using Python and scikit-learn. Perfect for beginners with basic Python knowledge.</p>
+                </div>
+                
+                <div class="workshop-item">
+                    <h3 class="workshop-title">Web Development Bootcamp: React & Node.js</h3>
+                    <p class="workshop-date">October 22, 2023 | 1:00 PM - 6:00 PM</p>
+                    <p>A comprehensive bootcamp on building full-stack web applications using React for the frontend and Node.js for the backend.</p>
+                </div>
+                
+                <div class="workshop-item">
+                    <h3 class="workshop-title">Arduino Workshop for Beginners</h3>
+                    <p class="workshop-date">November 5, 2023 | 3:00 PM - 6:00 PM</p>
+                    <p>Get started with Arduino programming and build your first electronic project. All materials provided.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-content">
+            <h2>Past Workshops</h2>
+            <div class="workshop-list">
+                <div class="workshop-item">
+                    <h3 class="workshop-title">Cloud Computing with AWS</h3>
+                    <p class="workshop-date">September 18, 2023</p>
+                    <p>An introduction to Amazon Web Services and how to deploy applications to the cloud.</p>
+                </div>
+                
+                <div class="workshop-item">
+                    <h3 class="workshop-title">Mobile App Development with Flutter</h3>
+                    <p class="workshop-date">September 5, 2023</p>
+                    <p>Building cross-platform mobile applications using Google's Flutter framework.</p>
+                </div>
+                
+                <div class="workshop-item">
+                    <h3 class="workshop-title">Cybersecurity Fundamentals</h3>
+                    <p class="workshop-date">August 20, 2023</p>
+                    <p>Learning the basics of cybersecurity, common vulnerabilities, and how to protect digital assets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="100">
+                <p>Technology and Engineering Society</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#activities">Activities</a></li>
+                        <li><a href="../index.html#people">Our People</a></li>
+                        <li><a href="../index.html#achievements">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Technology and Engineering Society. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="module">
+        import { headerLinks } from '../header-links.js';
+        document.getElementById('header-links').innerHTML = headerLinks.replace(/\/index.html/g, '../index.html').replace(/\/pages\//g, '');
+    </script>
+</body>
+</html>

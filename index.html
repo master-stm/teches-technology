@@ -1,0 +1,510 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechES - Technology and Engineering Society</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+    }
+    </script>
+    <script type="module" src="./config.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script src="menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="240">
+        </div>
+        <nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="header-links" class="nav-links">
+                <!-- Header links will be loaded from header-links.js -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slider-container">
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Shaping the Future Through Innovation</h2>
+                    <p>Bringing together passionate individuals in technology and engineering</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Building Technology Leaders</h2>
+                    <p>Providing the skills and experience needed for success in tech careers</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Connect, Learn, Create</h2>
+                    <p>Join our diverse community of tech enthusiasts and innovators</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Real-World Projects & Experience</h2>
+                    <p>Gain hands-on experience with industry-standard tools and technologies</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h2>Join TechES Today</h2>
+                    <p>Be part of a journey to transform the technology landscape</p>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About TechES</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>The Technology and Engineering Society (TechES) is a student-led organization dedicated to fostering innovation, collaboration, and professional development in the fields of technology and engineering.</p>
+                <p>Founded in 2018, we've grown into a vibrant community of over 200 members from diverse technical backgrounds, united by our passion for pushing the boundaries of what's possible.</p>
+                <p>Our mission is to bridge the gap between academic knowledge and practical industry skills, preparing our members for successful careers in technology and engineering sectors.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Awards</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="activities-section">
+        <h2>Our Activities</h2>
+        <div class="activities-grid">
+            <a href="pages/workshops.html" class="activity-card">
+                <div class="activity-icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M15,5H14V4H15M10,5H9V4H10M15.53,2.16L16.84,0.85C17.03,0.66 17.03,0.34 16.84,0.14C16.64,-0.05 16.32,-0.05 16.13,0.14L14.65,1.62C13.85,1.23 12.95,1 12,1C11.04,1 10.14,1.23 9.34,1.63L7.85,0.14C7.66,-0.05 7.34,-0.05 7.15,0.14C6.95,0.34 6.95,0.66 7.15,0.85L8.46,2.16C6.97,3.26 6,5 6,7H18C18,5 17,3.25 15.53,2.16M20.5,8A1.5,1.5 0 0,0 19,9.5V16.5A1.5,1.5 0 0,0 20.5,18A1.5,1.5 0 0,0 22,16.5V9.5A1.5,1.5 0 0,0 20.5,8M3.5,8A1.5,1.5 0 0,0 2,9.5V16.5A1.5,1.5 0 0,0 3.5,18A1.5,1.5 0 0,0 5,16.5V9.5A1.5,1.5 0 0,0 3.5,8M6,18A1,1 0 0,0 7,19H8V22.5A1.5,1.5 0 0,0 9.5,24A1.5,1.5 0 0,0 11,22.5V19H13V22.5A1.5,1.5 0 0,0 14.5,24A1.5,1.5 0 0,0 16,22.5V19H17A1,1 0 0,0 18,18V8H6V18Z" />
+                    </svg>
+                </div>
+                <h3>Workshops & Training</h3>
+                <p>Regular hands-on sessions on cutting-edge technologies, programming languages, and engineering tools.</p>
+            </a>
+            <a href="pages/industry-talks.html" class="activity-card">
+                <div class="activity-icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                    </svg>
+                </div>
+                <h3>Industry Talks</h3>
+                <p>Guest lectures and panel discussions featuring professionals from leading tech companies and engineering firms.</p>
+            </a>
+            <a href="pages/hackathons.html" class="activity-card">
+                <div class="activity-icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M2.81,14.12L5.64,11.29L8.17,10.79C11.39,6.41 17.55,4.22 19.78,4.22C19.78,6.45 17.59,12.61 13.21,15.83L12.71,18.36L9.88,21.19L9.17,17.66C7.76,17.66 7.76,17.66 7.05,16.95C6.34,16.24 6.34,16.24 6.34,14.83L2.81,14.12M5.64,16.95L7.05,18.36L4.39,21.03H2.97V19.61L5.64,16.95M4.22,15.54L5.46,15.71L3,18.16V16.74L4.22,15.54M8.29,18.54L8.46,19.78L7.26,21H5.84L8.29,18.54M13,9.5A1.5,1.5 0 0,0 11.5,11A1.5,1.5 0 0,0 13,12.5A1.5,1.5 0 0,0 14.5,11A1.5,1.5 0 0,0 13,9.5Z" />
+                    </svg>
+                </div>
+                <h3>Hackathons & Competitions</h3>
+                <p>Regular coding competitions and engineering challenges to test skills and promote creative problem-solving.</p>
+            </a>
+            <a href="pages/academic-research.html" class="activity-card">
+                <div class="activity-icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M12,3L1,9L12,15L21,10.09V17H23V9M12,5.5L5.5,9L12,12.5L18.5,9L12,5.5M5,13.5V17.5L12,21L19,17.5V13.5L12,17L5,13.5Z" />
+                    </svg>
+                </div>
+                <h3>Academic Research</h3>
+                <p>Cutting-edge research projects collaborating with faculty advisors to push the boundaries of technology and engineering.</p>
+            </a>
+            <a href="pages/mentorship.html" class="activity-card">
+                <div class="activity-icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                    </svg>
+                </div>
+                <h3>Mentorship Program</h3>
+                <p>Connecting junior members with experienced professionals for guidance and career development advice.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="people" class="people-section">
+        <h2>Our Leadership</h2>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="leadership">Executive Team</button>
+            <button class="filter-btn" data-filter="board">Consulting Board</button>
+            <button class="filter-btn" data-filter="founding">Founding Board</button>
+        </div>
+        <div id="people-grid" class="people-grid">
+            <!-- People cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements-section">
+        <h2>Our Achievements</h2>
+        <style>
+            .achievements-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .achievement-card {
+                position: relative;
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                transition: all 0.3s ease;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+            }
+            
+            .achievement-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            }
+            
+            .achievement-card:nth-child(odd) {
+                transform: rotate(-1deg);
+            }
+            
+            .achievement-card:nth-child(even) {
+                transform: rotate(1deg);
+            }
+            
+            .achievement-card:nth-child(odd):hover {
+                transform: rotate(-1deg) translateY(-10px);
+            }
+            
+            .achievement-card:nth-child(even):hover {
+                transform: rotate(1deg) translateY(-10px);
+            }
+            
+            .achievement-content {
+                padding: 25px;
+                position: relative;
+                z-index: 1;
+            }
+            
+            .achievement-year {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: var(--primary-color);
+                color: white;
+                padding: 8px 15px;
+                font-weight: bold;
+                font-size: 1.2rem;
+                border-bottom-left-radius: 12px;
+            }
+            
+            .achievement-title {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                padding-right: 80px;
+                color: var(--primary-color);
+            }
+            
+            .achievement-description {
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+            
+            .achievement-icon {
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                color: var(--primary-color);
+                opacity: 0.2;
+                font-size: 2rem;
+                transition: all 0.3s ease;
+            }
+            
+            .achievement-card:hover .achievement-icon {
+                opacity: 0.6;
+                transform: rotate(15deg);
+            }
+            
+            @media (max-width: 768px) {
+                .achievements-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <div class="achievement-year">2023</div>
+                    <h3 class="achievement-title">National Robotics Competition - 1st Place</h3>
+                    <p class="achievement-description">Our team's autonomous robot 'NaviBot' won the national competition for its innovative navigation system and efficient task completion.</p>
+                    <div class="achievement-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M15,5H14V4H15M10,5H9V4H10M15.53,2.16L16.84,0.85C17.03,0.66 17.03,0.34 16.84,0.14C16.64,-0.05 16.32,-0.05 16.13,0.14L14.65,1.62C13.85,1.23 12.95,1 12,1C11.04,1 10.14,1.23 9.34,1.63L7.85,0.14C7.66,-0.05 7.34,-0.05 7.15,0.14C6.95,0.34 6.95,0.66 7.15,0.85L8.46,2.16C6.97,3.26 6,5 6,7H18C18,5 17,3.25 15.53,2.16M20.5,8A1.5,1.5 0 0,0 19,9.5V16.5A1.5,1.5 0 0,0 20.5,18A1.5,1.5 0 0,0 22,16.5V9.5A1.5,1.5 0 0,0 20.5,8M3.5,8A1.5,1.5 0 0,0 2,9.5V16.5A1.5,1.5 0 0,0 3.5,18A1.5,1.5 0 0,0 5,16.5V9.5A1.5,1.5 0 0,0 3.5,8M6,18A1,1 0 0,0 7,19H8V22.5A1.5,1.5 0 0,0 9.5,24A1.5,1.5 0 0,0 11,22.5V19H13V22.5A1.5,1.5 0 0,0 14.5,24A1.5,1.5 0 0,0 16,22.5V19H17A1,1 0 0,0 18,18V8H6V18Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <div class="achievement-year">2022</div>
+                    <h3 class="achievement-title">Best Student Organization Award</h3>
+                    <p class="achievement-description">Recognized by the university for outstanding contribution to student skill development and community engagement.</p>
+                    <div class="achievement-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <div class="achievement-year">2021</div>
+                    <h3 class="achievement-title">Tech Startup Weekend - Innovation Prize</h3>
+                    <p class="achievement-description">Our team's sustainable energy monitoring solution won recognition for its potential impact on reducing carbon footprints.</p>
+                    <div class="achievement-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <div class="achievement-year">2020</div>
+                    <h3 class="achievement-title">International Coding Challenge - Finalists</h3>
+                    <p class="achievement-description">Reached the final round among 500+ teams worldwide, showcasing exceptional problem-solving skills.</p>
+                    <div class="achievement-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M5.64,16.95L7.05,18.36L4.39,21.03H2.97V19.61L5.64,16.95M4.22,15.54L5.46,15.71L3,18.16V16.74L4.22,15.54M8.29,18.54L8.46,19.78L7.26,21H5.84L8.29,18.54M13,9.5A1.5,1.5 0 0,0 11.5,11A1.5,1.5 0 0,0 13,12.5A1.5,1.5 0 0,0 14.5,11A1.5,1.5 0 0,0 13,9.5Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <div class="achievement-year">2019</div>
+                    <h3 class="achievement-title">Community Outreach Excellence Award</h3>
+                    <p class="achievement-description">Recognized for our STEM education initiatives in local schools, reaching over 500 students in underprivileged areas.</p>
+                    <div class="achievement-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners-section">
+        <h2>Our Network</h2>
+        
+        <div class="partners-subsection">
+            <h3>Sponsors</h3>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Sponsor 1</text>
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Sponsor 2</text>
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Sponsor 3</text>
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Sponsor 4</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="partners-subsection">
+            <h3>Partners</h3>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Partner 1</text>
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Partner 2</text>
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Partner 3</text>
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <rect width="120" height="60" fill="#f5f5f5"/>
+                        <text x="60" y="35" font-family="Arial" font-size="14" text-anchor="middle">Partner 4</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="partners-subsection">
+            <h3>Our Members Are Placed</h3>
+            <div class="placement-container">
+                <div class="placement-scroll">
+                    <!-- Company logos will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                    </svg>
+                    <p>123 Tech Campus, University Avenue</p>
+                </div>
+                <div class="contact-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                    </svg>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c2a1adacb6a3a1b682b6a7a1aaa7b1ecadb0a5">[email&#160;protected]</a></p>
+                </div>
+                <div class="contact-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                    </svg>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#3498db" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#3498db" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#3498db" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#3498db" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <select>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="membership">Membership Inquiry</option>
+                    <option value="collaboration">Collaboration Proposal</option>
+                    <option value="sponsorship">Sponsorship Opportunity</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="100">
+            <p>Technology and Engineering Society</p>
+            
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#people">Our Leadership</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Technology and Society. All Rights Reserved.</p>
+    </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module">
+    import { headerLinks } from './header-links.js';
+    document.getElementById('header-links').innerHTML = headerLinks;
+</script>
+</body>
+</html>

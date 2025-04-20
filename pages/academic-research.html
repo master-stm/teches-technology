@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Research - TechES</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .activity-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .activity-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .activity-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .activity-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .activity-content {
+            margin-bottom: 3rem;
+        }
+        
+        .activity-content h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--light-background);
+            padding-bottom: 0.5rem;
+        }
+        
+        .research-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .research-item {
+            background-color: var(--light-background);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .research-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .research-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .research-mentor {
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+            margin-bottom: 1rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .back-button svg {
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+        
+        .paper-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .paper-link:hover {
+            text-decoration: underline;
+        }
+        
+        .paper-link svg {
+            vertical-align: middle;
+            margin-left: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="120">
+            </a>
+        </div>
+        <h1>TechES</h1>
+        <nav>
+            <ul id="header-links">
+                <!-- Header links will be loaded from header-links.js -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="activity-page">
+        <a href="../index.html#activities" class="back-button">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+            Back to Activities
+        </a>
+        
+        <div class="activity-header">
+            <h1 class="activity-title">Academic Research</h1>
+            <p class="activity-description">
+                At TechES, we pride ourselves on contributing to cutting-edge academic research. Our members collaborate with faculty advisors and industry professionals to pursue research in various fields of technology and engineering. Through our research initiatives, we aim to push the boundaries of knowledge and create innovative solutions to real-world problems.
+            </p>
+        </div>
+        
+        <div class="activity-content">
+            <h2>Current Research Projects</h2>
+            <div class="research-list">
+                <div class="research-item">
+                    <h3 class="research-title">Advanced Machine Learning Algorithms for Healthcare</h3>
+                    <p class="research-mentor">Mentor: Dr. Lisa Zhang</p>
+                    <p>Developing innovative machine learning models to analyze medical imaging data for early disease detection, with a focus on improving diagnostic accuracy for underserved populations.</p>
+                    <a href="#" class="paper-link">View related publication
+                        <svg width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="research-item">
+                    <h3 class="research-title">Sustainable Energy Storage Solutions</h3>
+                    <p class="research-mentor">Mentor: Dr. Amara Okafor</p>
+                    <p>Investigating novel materials and designs for next-generation batteries with improved energy density, longer lifespans, and reduced environmental impact.</p>
+                    <a href="#" class="paper-link">View related publication
+                        <svg width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="research-item">
+                    <h3 class="research-title">Quantum Computing Algorithms</h3>
+                    <p class="research-mentor">Mentor: Dr. Richard Lee</p>
+                    <p>Exploring quantum algorithms for solving complex optimization problems that are intractable with classical computing approaches.</p>
+                    <a href="#" class="paper-link">View related publication
+                        <svg width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-content">
+            <h2>Published Research</h2>
+            <div class="research-list">
+                <div class="research-item">
+                    <h3 class="research-title">Neural Network Architecture for Edge Computing Devices</h3>
+                    <p class="research-mentor">Authors: Sarah Johnson, Oluwaseun Adebayo, Dr. Lisa Zhang</p>
+                    <p>A study on optimizing neural network architectures for deployment on resource-constrained edge devices, improving inference speed while maintaining accuracy.</p>
+                    <a href="#" class="paper-link">Read full paper
+                        <svg width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="research-item">
+                    <h3 class="research-title">Secure Multi-Party Computation in IoT Networks</h3>
+                    <p class="research-mentor">Authors: Aisha Mohammed, Michael Chen, Thomas Wright</p>
+                    <p>A framework for enabling secure distributed computation across IoT devices without compromising data privacy or security.</p>
+                    <a href="#" class="paper-link">Read full paper
+                        <svg width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="research-item">
+                    <h3 class="research-title">Hybrid Renewable Energy Integration Systems</h3>
+                    <p class="research-mentor">Authors: Michael Chen, Carlos Rodriguez, Dr. Amara Okafor</p>
+                    <p>An innovative approach to integrating multiple renewable energy sources with smart grid technologies for improved reliability and efficiency.</p>
+                    <a href="#" class="paper-link">Read full paper
+                        <svg width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="100">
+                <p>Technology and Engineering Society</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#activities">Activities</a></li>
+                        <li><a href="../index.html#people">Our People</a></li>
+                        <li><a href="../index.html#achievements">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Technology and Engineering Society. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="module">
+        import { headerLinks } from '../header-links.js';
+        document.getElementById('header-links').innerHTML = headerLinks.replace(/\/index.html/g, '../index.html').replace(/\/pages\//g, '');
+    </script>
+</body>
+</html>

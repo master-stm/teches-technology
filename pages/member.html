@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Profile - TechES</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+    }
+    </script>
+    <style>
+        .member-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .member-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .member-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .member-details {
+            flex: 1;
+        }
+        
+        .member-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .member-role {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .member-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .member-bio {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .cv-section {
+            margin-bottom: 3rem;
+        }
+        
+        .cv-section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--light-background);
+            padding-bottom: 0.5rem;
+        }
+        
+        .experience-item, .education-item, .skills-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-title, .education-degree {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+        
+        .experience-company, .education-institution {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+        
+        .experience-date, .education-date {
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+            margin-bottom: 0.8rem;
+        }
+        
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill-tag {
+            background-color: var(--light-background);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .back-button svg {
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="120">
+            </a>
+        </div>
+        <h1>TechES</h1>
+        <nav>
+            <ul id="header-links">
+            </ul>
+        </nav>
+    </header>
+
+    <div class="member-page" id="member-profile">
+        <a href="javascript:history.back()" class="back-button">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+            Back
+        </a>
+        
+        <div class="member-header">
+            <div class="member-image" id="member-image"></div>
+            <div class="member-details">
+                <h1 class="member-name" id="member-name"></h1>
+                <h2 class="member-role" id="member-role"></h2>
+                <p class="member-bio" id="member-bio"></p>
+                <div class="member-social" id="member-social"></div>
+            </div>
+        </div>
+        
+        <div class="cv-content">
+            <section class="cv-section">
+                <h2>Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-title">Research Assistant</h3>
+                        <p class="experience-company">University AI Lab</p>
+                        <p class="experience-date">Jan 2022 - Present</p>
+                        <p class="experience-description">Working on cutting-edge AI research for natural language processing applications. Developed several models that improved accuracy by 15% over previous benchmarks.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-title">Software Engineering Intern</h3>
+                        <p class="experience-company">Tech Innovations Inc.</p>
+                        <p class="experience-date">May 2021 - Aug 2021</p>
+                        <p class="experience-description">Collaborated on developing a responsive web application using React and Node.js. Implemented key features that improved user engagement by 30%.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cv-section">
+                <h2>Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h3 class="education-degree">B.S. in Computer Science</h3>
+                        <p class="education-institution">University of Technology</p>
+                        <p class="education-date">2019 - 2023 (Expected)</p>
+                        <p class="education-description">Focus on Artificial Intelligence and Machine Learning. GPA: 3.9/4.0</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cv-section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </section>
+            
+            <section class="cv-section">
+                <h2>Projects</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-title">Sentiment Analysis Tool</h3>
+                        <p class="experience-date">2022</p>
+                        <p class="experience-description">Developed a web-based sentiment analysis tool using Python and Flask. Implemented advanced NLP techniques to achieve 92% accuracy in sentiment classification.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-title">Smart Home Energy Monitor</h3>
+                        <p class="experience-date">2021</p>
+                        <p class="experience-description">Created an IoT solution to monitor home energy usage. Built with Arduino, Raspberry Pi, and a React dashboard, allowing users to reduce energy consumption by 20%.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="100">
+                <p>Technology and Engineering Society</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#activities">Activities</a></li>
+                        <li><a href="../index.html#people">Our People</a></li>
+                        <li><a href="../index.html#achievements">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Technology and Engineering Society. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../member-data.js"></script>
+    <script type="module">
+        import { headerLinks } from '../header-links.js';
+        document.getElementById('header-links').innerHTML = headerLinks.replace(/\/index.html/g, '../index.html').replace(/\/pages\//g, '');
+    </script>
+</body>
+</html>
