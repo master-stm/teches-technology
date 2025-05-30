@@ -1,4 +1,3 @@
-import { people } from './config.js';
 import { companyLogos } from './company-data.js';
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -18,7 +18,9 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.jpg" alt="TechES Logo" width="240">
+            <a href="index.html">
+                <img src="logo.jpg" alt="TechES Logo" width="120">
+            </a>
         </div>
         <nav>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -36,32 +38,32 @@
         <div class="slider-container">
             <div class="slide">
                 <div class="hero-content">
-                    <h2>Shaping the Future Through Innovation</h2>
-                    <p>Bringing together passionate individuals in technology and engineering</p>
+                    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Shaping the Future Through Innovation</h2>
+                    <p style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Bringing together passionate individuals in technology and engineering</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="hero-content">
-                    <h2>Building Technology Leaders</h2>
-                    <p>Providing the skills and experience needed for success in tech careers</p>
+                    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Building Technology Leaders</h2>
+                    <p style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Providing the skills and experience needed for success in tech careers</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="hero-content">
-                    <h2>Connect, Learn, Create</h2>
-                    <p>Join our diverse community of tech enthusiasts and innovators</p>
+                    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Connect, Learn, Create</h2>
+                    <p style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Join our diverse community of tech enthusiasts and innovators</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="hero-content">
-                    <h2>Real-World Projects & Experience</h2>
-                    <p>Gain hands-on experience with industry-standard tools and technologies</p>
+                    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Real-World Projects & Experience</h2>
+                    <p style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Gain hands-on experience with industry-standard tools and technologies</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="hero-content">
-                    <h2>Join TechES Today</h2>
-                    <p>Be part of a journey to transform the technology landscape</p>
+                    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Join TechES Today</h2>
+                    <p style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Be part of a journey to transform the technology landscape</p>
                 </div>
             </div>
             <div class="slider-nav">
@@ -74,17 +76,130 @@
         </div>
     </section>
 
+    <style>
+        .hero {
+            position: relative;
+            height: 80vh;
+            background: linear-gradient(135deg, #DE5BD2, #7C5AF3);
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            position: relative;
+            height: 100%;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            z-index: 2;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .slider-nav {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            z-index: 3;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .slider-dot.active {
+            background: white;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // Initialize first slide
+            showSlide(0);
+
+            // Auto-advance slides every 5 seconds
+            setInterval(nextSlide, 5000);
+
+            // Add click handlers for dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    showSlide(currentSlide);
+                });
+            });
+        });
+    </script>
+
     <section id="about" class="about-section">
         <h2>About TechES</h2>
         <div class="about-content">
             <div class="about-text">
                 <p>The Technology and Engineering Society (TechES) is a student-led organization dedicated to fostering innovation, collaboration, and professional development in the fields of technology and engineering.</p>
-                <p>TechEs was founded as a KCST Programming Club in 2018 and rebranded as TechES in 2024.  We've evolved into a thriving community of more than 50 individuals with varied technical skills.</p>
+                <p>TechEs was founded as a KCST Programming Club in 2018 and rebranded as TechES in 2025.  We've evolved into a thriving community of more than 50 individuals with varied technical skills.</p>
                 <p>Our mission is to bridge the gap between academic knowledge and practical industry skills, preparing our members for successful careers in technology and engineering sectors.</p>
             </div>
             <div class="about-stats">
                 <div class="stat-item">
-                    <span class="stat-number">50+</span>
+                    <span class="stat-number">200+</span>
                     <span class="stat-label">Members</span>
                 </div>
                 <div class="stat-item">
@@ -159,7 +274,111 @@
             <button class="filter-btn" data-filter="founding">Founding Board</button>
         </div>
         <div id="people-grid" class="people-grid">
-            <!-- People cards will be dynamically generated here -->
+            <!-- Executive Team -->
+            <div class="person-card" data-category="leadership">
+                <div class="person-image">
+                    <img src="./assets/members/images/abudullah.png" alt="Abdullah" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Abdullah</h3>
+                    <p class="person-role">President</p>
+                    <p class="person-bio">Computer Science student with a passion for AI and machine learning. Leading TechES to new heights.</p>
+                    <a href="cv/abdullah-cv.pdf" class="cv-link">View CV</a>
+                </div>
+            </div>
+
+            <div class="person-card" data-category="leadership">
+                <div class="person-image">
+                    <img src="./assets/members/images/salem.png" alt="Salem" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Salem</h3>
+                    <p class="person-role">Vice President</p>
+                    <p class="person-bio">Software Engineering student specializing in web development and cloud technologies.</p>
+                    <a href="cv/salem-cv.pdf" class="cv-link">View CV</a>
+                </div>
+            </div>
+
+            <!-- Founding Board -->
+            <div class="person-card" data-category="founding">
+                <div class="person-image">
+                    <img src="./assets/members/images/omar.png" alt="Omar" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Omar</h3>
+                    <p class="person-role">Founding Member</p>
+                    <p class="person-bio">Pioneer in establishing TechES and driving its initial growth and development.</p>
+                    <a href="cv/omar-cv.pdf" class="cv-link">View CV</a>
+                </div>
+            </div>
+
+            <div class="person-card" data-category="founding">
+                <div class="person-image">
+                    <img src="./assets/members/images/ahmad.png" alt="Ahmed" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Ahmed</h3>
+                    <p class="person-role">Founding Member</p>
+                    <p class="person-bio">Key contributor to TechES's foundation and early success.</p>
+                    <a href="cv/ahmed-cv.pdf" class="cv-link">View CV</a>
+                </div>
+            </div>
+
+            <!-- Consulting Board -->
+            <div class="person-card" data-category="board">
+                <div class="person-image">
+                    <img src="./assets/members/images/dr-omar.png" alt="Dr. Omer Adam" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Dr. Omer Adam</h3>
+                    <p class="person-role">CSE Department</p>
+                    <p class="person-bio">Expert in computer science and engineering, providing valuable guidance to TechES.</p>
+                </div>
+            </div>
+
+            <div class="person-card" data-category="board">
+                <div class="person-image">
+                    <img src="./assets/members/images/dr-murad.jpeg" alt="Dr. Murad Khan" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Dr. Murad Khan</h3>
+                    <p class="person-role">CSE Department</p>
+                    <p class="person-bio">Specialist in advanced computing technologies and research methodologies.</p>
+                </div>
+            </div>
+
+            <div class="person-card" data-category="board">
+                <div class="person-image">
+                    <img src="./assets/members/images/prof-haidar.png" alt="Prof. Haidar Ramadhan" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Prof. Haidar Ramadhan</h3>
+                    <p class="person-role">CSE Department</p>
+                    <p class="person-bio">Distinguished professor with extensive experience in computer science education.</p>
+                </div>
+            </div>
+
+            <div class="person-card" data-category="board">
+                <div class="person-image">
+                    <img src="./assets/members/images/dr-baba.png" alt="Dr. Abdullatif BABA" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Dr. Abdullatif BABA</h3>
+                    <p class="person-role">CSE Department</p>
+                    <p class="person-bio">Expert in artificial intelligence and machine learning applications.</p>
+                </div>
+            </div>
+
+            <div class="person-card" data-category="board">
+                <div class="person-image">
+                    <img src="./assets/members/images/eng-maha.jpg" alt="Eng. Maha Alsayed" width="50" height="50">
+                </div>
+                <div class="person-info">
+                    <h3>Eng. Maha Alsayed</h3>
+                    <p class="person-role">CSE Department</p>
+                    <p class="person-bio">Professional engineer with expertise in software development and project management.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -424,14 +643,15 @@
                     <a href="#" class="social-link">
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <path fill="#3498db" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
-                    </svg>
-                </a>
-                <a href="#" class="social-link">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#3498db" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                    </svg>
-                </a>
-            </div> -->
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#3498db" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                        </svg>
+                    </a>
+                </div> -->
+            </div>
         </div>
         <div class="contact-form">
             <form id="contact-form">
@@ -454,9 +674,8 @@
 <footer>
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="logo.jpg" alt="TechES Logo" width="100">
+            <h2 class="footer-logo-text">TechES</h2>
             <p>Technology and Engineering Society</p>
-            
         </div>
         <div class="footer-links">
             <div class="footer-column">

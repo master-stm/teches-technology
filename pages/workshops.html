@@ -82,10 +82,10 @@
     <header>
         <div class="logo">
             <a href="../index.html">
-                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="120">
+                <img src="../logo.jpg" alt="TechES Logo" width="120">
             </a>
         </div>
-        <h1>TechES</h1>
+     
         <nav>
             <ul id="header-links">
                 <!-- Header links will be loaded from header-links.js -->
@@ -93,72 +93,73 @@
         </nav>
     </header>
 
-    <div class="activity-page">
-        <a href="../index.html#activities" class="back-button">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-            </svg>
-            Back to Activities
-        </a>
+    <section class="workshops-section">
+        <h2>Workshops & Training</h2>
         
-        <div class="activity-header">
-            <h1 class="activity-title">Workshops & Training</h1>
-            <p class="activity-description">
-                Our workshops and training sessions are designed to provide hands-on experience with cutting-edge technologies, programming languages, and engineering tools. Led by industry experts and experienced members, these sessions help bridge the gap between academic knowledge and practical skills needed in the tech industry.
-            </p>
-        </div>
-        
-        <div class="activity-content">
-            <h2>Upcoming Workshops</h2>
-            <div class="workshop-list">
-                <div class="workshop-item">
-                    <h3 class="workshop-title">Introduction to Machine Learning with Python</h3>
-                    <p class="workshop-date">October 15, 2023 | 2:00 PM - 5:00 PM</p>
-                    <p>Learn the fundamentals of machine learning using Python and scikit-learn. Perfect for beginners with basic Python knowledge.</p>
+        <div class="workshops-container">
+            <div class="upcoming-workshops">
+                <h3>Upcoming Workshops</h3>
+                <div class="workshop-card placeholder">
+                    <div class="workshop-content">
+                        <h4>Working on it</h4>
+                        <p>We are currently planning our next workshops. Stay tuned!</p>
+                    </div>
                 </div>
-                
-                <div class="workshop-item">
-                    <h3 class="workshop-title">Web Development Bootcamp: React & Node.js</h3>
-                    <p class="workshop-date">October 22, 2023 | 1:00 PM - 6:00 PM</p>
-                    <p>A comprehensive bootcamp on building full-stack web applications using React for the frontend and Node.js for the backend.</p>
+            </div>
+
+            <div class="past-workshops">
+                <h3>Past Workshops</h3>
+                <div class="workshop-card">
+                    <div class="workshop-content">
+                        <h4>Introduction to Web Development</h4>
+                        <p class="workshop-meta">
+                            <span class="instructor">Instructor: Dr. Omer Adam</span>
+                            <span class="date">Date: March 15, 2024</span>
+                        </p>
+                        <p class="workshop-description">
+                            A comprehensive workshop covering HTML, CSS, and JavaScript fundamentals. 
+                            Participants learned to build responsive websites and implement basic interactivity.
+                        </p>
+                        <div class="workshop-outcomes">
+                            <h5>Learning Outcomes:</h5>
+                            <ul>
+                                <li>Understanding of web development basics</li>
+                                <li>Hands-on experience with modern web technologies</li>
+                                <li>Building a complete portfolio website</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="workshop-item">
-                    <h3 class="workshop-title">Arduino Workshop for Beginners</h3>
-                    <p class="workshop-date">November 5, 2023 | 3:00 PM - 6:00 PM</p>
-                    <p>Get started with Arduino programming and build your first electronic project. All materials provided.</p>
+
+                <div class="workshop-card">
+                    <div class="workshop-content">
+                        <h4>Data Science Fundamentals</h4>
+                        <p class="workshop-meta">
+                            <span class="instructor">Instructor: Dr. Murad Khan</span>
+                            <span class="date">Date: February 20, 2024</span>
+                        </p>
+                        <p class="workshop-description">
+                            An intensive workshop on data analysis, visualization, and machine learning basics.
+                            Participants worked with real-world datasets and learned to use Python for data science.
+                        </p>
+                        <div class="workshop-outcomes">
+                            <h5>Learning Outcomes:</h5>
+                            <ul>
+                                <li>Data analysis and visualization techniques</li>
+                                <li>Introduction to machine learning algorithms</li>
+                                <li>Practical experience with Python libraries</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="activity-content">
-            <h2>Past Workshops</h2>
-            <div class="workshop-list">
-                <div class="workshop-item">
-                    <h3 class="workshop-title">Cloud Computing with AWS</h3>
-                    <p class="workshop-date">September 18, 2023</p>
-                    <p>An introduction to Amazon Web Services and how to deploy applications to the cloud.</p>
-                </div>
-                
-                <div class="workshop-item">
-                    <h3 class="workshop-title">Mobile App Development with Flutter</h3>
-                    <p class="workshop-date">September 5, 2023</p>
-                    <p>Building cross-platform mobile applications using Google's Flutter framework.</p>
-                </div>
-                
-                <div class="workshop-item">
-                    <h3 class="workshop-title">Cybersecurity Fundamentals</h3>
-                    <p class="workshop-date">August 20, 2023</p>
-                    <p>Learning the basics of cybersecurity, common vulnerabilities, and how to protect digital assets.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="../indownloader.app_picture_0576969001742979617.jpg" alt="TechES Logo" width="100">
+                <h2 class="footer-logo-text">TechES</h2>
                 <p>Technology and Engineering Society</p>
             </div>
             <div class="footer-links">
@@ -167,7 +168,7 @@
                     <ul>
                         <li><a href="../index.html#about">About Us</a></li>
                         <li><a href="../index.html#activities">Activities</a></li>
-                        <li><a href="../index.html#people">Our People</a></li>
+                        <li><a href="../index.html#people">Our Leadership</a></li>
                         <li><a href="../index.html#achievements">Achievements</a></li>
                     </ul>
                 </div>
@@ -191,12 +192,17 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Technology and Engineering Society. All Rights Reserved.</p>
+            <p>&copy; <span id="current-year"></span> Technology and Society. All Rights Reserved.</p>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
     <script type="module">
         import { headerLinks } from '../header-links.js';
         document.getElementById('header-links').innerHTML = headerLinks.replace(/\/index.html/g, '../index.html').replace(/\/pages\//g, '');
     </script>
+    <script type="module" src="../config.js"></script>
+    <script type="module" src="../main.js"></script>
 </body>
 </html>
